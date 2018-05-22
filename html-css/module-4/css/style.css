@@ -1,0 +1,154 @@
+* {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+                    /* NAVIGATION CSS ^ */
+.wrapper {
+    height: 1850px;
+    border: 1px solid black;
+    width: 1650px;
+    margin: auto;
+}
+
+.wrapper-main {
+    height: 100%;
+    width: 1110px;
+    margin: auto;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    display: inline-block;
+    float: left;
+    font-size: 30px;
+}
+
+.logo::first-letter {
+    color: #4dc7ad;
+}
+
+ul {
+    list-style: none;
+    float: right;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 0 30px;
+}
+
+ul li:nth-child(1) {
+    color: #4dc7ad;
+}
+
+        /* FEATURE PRODUCTS    CSS */
+.featured-products {
+    clear: both;
+    height: 950px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.section-header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2:after {
+    content: "";
+    display: block;
+    margin: 15px auto 0 auto;
+    height: 10px;
+    width: 240px;
+    background-color: #4dc7ad;
+}
+.products {
+    height: 320px;
+    width: 250px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    margin: 13px 13px 13px 13px;
+}
+
+.name {
+    display: inline-block;
+    width: 80%;
+    float: left;
+    background-color: black;
+    color: white;
+    padding: 5px 0 5px 15px;
+}
+
+.price {
+    display: inline-block;
+    width: 20%;
+    float: right;
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+.product {
+    margin-top: 295px;
+    box-sizing: border-box;
+    font-size: 18px;
+    transition: .3s linear;
+}
+
+.block1 {background-image: url("../img/pic-8.png"); }
+.block2 {background-image: url("../img/pic-7.png"); }
+.block3 {background-image: url("../img/pic-6.png"); }
+.block4 {background-image: url("../img/pic-5.png"); }
+.block5 {background-image: url("../img/pic-4.png"); }
+.block6 {background-image: url("../img/pic-3.png"); }
+.block7 {background-image: url("../img/pic-2.png"); }
+.block8 {background-image: url("../img/pic-1.png"); }
+
+.wrapper-blog {
+    width: 350px;
+    height: 500px;
+    float: left;
+    margin: 0 10px 0 10px;
+}
+
+h3::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 120px;
+    background-color: #4dc7ad;
+    margin: 5px 0 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 35px 15px 35px;
+    background-color: #4dc7ad;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+}
+
+.products:hover .name{
+    background: #4dc7ad;
+    transition: .3s linear;
+}
+
+.products:hover .price{
+    background: #6ef7d9;
+}
