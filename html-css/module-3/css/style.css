@@ -1,47 +1,48 @@
-body {
-    font-family: 'Playfair Display', serif;
+* {
+    font-family: 'Playfair Display', Arial, serif;
     text-align: center;
-    padding-top: 20px ;
-    padding-bottom: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-article {
-    display: inline-block;
-    width: 1200px;
-    height: 2000px;
-}
 .main {
     width: 930px;
     margin: auto;
+    padding-top: 70px;
 }
 ul {
     list-style-type: none;
-    margin-top: 60px;
 }
 ul li {
     display: inline-block;
     margin-left: 40px;
-    margin-right: 70px;
 }
 h1 {
+    text-align: left;
     font-size: 30px;
     white-space: nowrap;
 }
 .content {
     width: 400px;
-    height: 475px;
     display: inline-block;
-    text-align: left;
     margin: 60px 60px 70px 0;
 }
+
 p {
+    margin: 15px 0 15px 0;
     text-align: justify;
 }
-ul li:nth-child(1) {
+ul li > a {
+    text-decoration: none;
+    color: black;
+
+}
+ul li > a:hover {
     color: aqua;
 }
 div {
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 10px;
     width: 150px;
     margin: auto;
