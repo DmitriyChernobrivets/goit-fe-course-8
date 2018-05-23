@@ -2,29 +2,17 @@
     font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-
                     /* NAVIGATION CSS ^ */
 .wrapper {
-    height: 1850px;
-    border: 1px solid black;
-    width: 1650px;
-    margin: auto;
-}
-
-.wrapper-main {
-    height: 100%;
     width: 1110px;
     margin: auto;
-}
-
-header {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .logo {
     display: inline-block;
-    float: left;
     font-size: 30px;
 }
 
@@ -42,13 +30,20 @@ ul li {
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0 0 30px;
+    outline: 2px solid black;
 }
-
+ul li > a {
+    text-decoration: none;
+    color: black;
+}
+ul li > a:hover {
+    color: #4dc7ad;
+}
 ul li:nth-child(1) {
     color: #4dc7ad;
 }
 
-        /* FEATURE PRODUCTS    CSS */
+                /* FEATURE PRODUCTS    CSS */
 .featured-products {
     clear: both;
     height: 950px;
@@ -57,9 +52,8 @@ ul li:nth-child(1) {
 }
 
 .section-header {
-    width: 100%;
     text-align: center;
-    margin-bottom: 100px;
+    padding: 40px;
 }
 
 h2 {
@@ -85,7 +79,6 @@ h2:after {
 }
 
 .name {
-    display: inline-block;
     width: 80%;
     float: left;
     background-color: black;
@@ -96,7 +89,6 @@ h2:after {
 .price {
     display: inline-block;
     width: 20%;
-    float: right;
     background-color: gray;
     color: white;
     text-align: center;
@@ -105,7 +97,6 @@ h2:after {
 
 .product {
     margin-top: 295px;
-    box-sizing: border-box;
     font-size: 18px;
     transition: .3s linear;
 }
@@ -119,9 +110,9 @@ h2:after {
 .block7 {background-image: url("../img/pic-2.png"); }
 .block8 {background-image: url("../img/pic-1.png"); }
 
-/* BLOG CSS */
+                    /* BLOG CSS */
 
-.wrapper-blog {
+.section-blog {
     width: 350px;
     height: 500px;
     float: left;
@@ -144,8 +135,11 @@ h3::after {
     border-radius: 5px;
     font-size: 16px;
     color: white;
+    margin-top: 15px;
 }
-
+.latest-news {
+    padding-top: 30px;
+}
 .products:hover .name{
     background: #4dc7ad;
     transition: .3s linear;
