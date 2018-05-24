@@ -3,6 +3,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    color: black;
 }
                     /* NAVIGATION CSS ^ */
 .wrapper {
@@ -31,10 +33,7 @@ ul li {
     font-weight: bold;
     margin: 10px 0 0 30px;
 }
-ul li > a {
-    text-decoration: none;
-    color: black;
-}
+
 ul li > a:hover {
     color: #4dc7ad;
 }
@@ -97,7 +96,7 @@ h2:after {
 .product {
     margin-top: 295px;
     font-size: 18px;
-    transition: .3s linear;
+    transition: .5s linear;
 }
 
 .block1 {background-image: url("../img/pic-8.png"); }
@@ -141,7 +140,7 @@ h3::after {
 }
 .products:hover .name{
     background: #4dc7ad;
-    transition: .3s linear;
+    transition: .5s linear;
 }
 
 .products:hover .price{
