@@ -8,9 +8,11 @@
     margin: auto;
     padding: 70px 0 70px 0;
 }
+
 .navigation-menu {
     list-style: none;
 }
+
 .navigation-menu-item {
     display: inline-block;
     margin-left: 40px;
@@ -21,26 +23,32 @@
     font-size: 30px;
     white-space: nowrap;
 }
+
 .content {
     width: 400px;
     display: inline-block;
     margin: 60px 60px 70px 0;
 }
+
 .signature {
     text-transform: uppercase;
 }
+
 p {
     margin: 15px 0 15px 0;
     text-align: justify;
 }
-.navigation-menu-item > a {
+
+.navigation-menu-item>a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
 }
-.navigation-menu-item > a:hover {
+
+.navigation-menu-item>a:hover {
     color: aqua;
 }
+
 .btn {
     border: 2px solid black;
     padding: 10px;
