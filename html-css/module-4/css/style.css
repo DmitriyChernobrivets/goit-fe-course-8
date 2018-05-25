@@ -99,14 +99,14 @@ h2:after {
     transition: .5s linear;
 }
 
-.block1 {background-image: url("../img/pic-8.png"); }
-.block2 {background-image: url("../img/pic-7.png"); }
-.block3 {background-image: url("../img/pic-6.png"); }
-.block4 {background-image: url("../img/pic-5.png"); }
-.block5 {background-image: url("../img/pic-4.png"); }
-.block6 {background-image: url("../img/pic-3.png"); }
-.block7 {background-image: url("../img/pic-2.png"); }
-.block8 {background-image: url("../img/pic-1.png"); }
+.block1 {background-image: url("../img/pic-8.png") }
+.block2 {background-image: url("../img/pic-7.png") }
+.block3 {background-image: url("../img/pic-6.png") }
+.block4 {background-image: url("../img/pic-5.png") }
+.block5 {background-image: url("../img/pic-4.png") }
+.block6 {background-image: url("../img/pic-3.png") }
+.block7 {background-image: url("../img/pic-2.png") }
+.block8 {background-image: url("../img/pic-1.png") }
 
                     /* BLOG CSS */
 

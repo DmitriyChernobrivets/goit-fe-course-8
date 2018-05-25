@@ -1,23 +1,22 @@
 * {
     font-family: 'Playfair Display', Arial, serif;
     text-align: center;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-.main {
+.wrapper {
     width: 930px;
     margin: auto;
-    padding-top: 70px;
+    padding: 70px 0 70px 0;
 }
-ul {
-    list-style-type: none;
+.navigation-menu {
+    list-style: none;
 }
-ul li {
+.navigation-menu-item {
     display: inline-block;
     margin-left: 40px;
 }
-h1 {
+
+.content-header {
     text-align: left;
     font-size: 30px;
     white-space: nowrap;
@@ -27,17 +26,19 @@ h1 {
     display: inline-block;
     margin: 60px 60px 70px 0;
 }
-
+.signature {
+    text-transform: uppercase;
+}
 p {
     margin: 15px 0 15px 0;
     text-align: justify;
 }
-ul li > a {
+.navigation-menu-item > a {
     text-decoration: none;
     color: black;
-
+    text-transform: uppercase;
 }
-ul li > a:hover {
+.navigation-menu-item > a:hover {
     color: aqua;
 }
 .btn {
