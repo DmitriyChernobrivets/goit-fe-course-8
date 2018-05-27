@@ -42,7 +42,6 @@ ul li>a:hover {
 /* FEATURE PRODUCTS    CSS */
 
 .featured-products {
-    clear: both;
     min-height: 950px;
     padding-top: 100px;
 }
