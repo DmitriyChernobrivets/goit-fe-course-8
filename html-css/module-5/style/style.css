@@ -1,8 +1,70 @@
+/* body {
+    padding: 60px;
+}
+.wraper {
+    height: 550px;
+    width: 550px;
+    border: 1px solid black;
+    padding: 10%;
+    background: red;
+}
+.wraper:hover .main {
+    display: block;
+}
+.main {
+    border: 1px solid black;
+    height: 500px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.block1, .block2, .block3 {
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
+}
+.block3 {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('../img/clock.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.block2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+.block4 {
+    padding: 0 30px 30px 0;
+    text-align: right;
+    font-size: 40px;
+    height: 100px;
+    border: 1px solid black;
+    background-image: url('../img/bag.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 20%;
+}
+
+.align {
+    position: relative;
+    outline: 1px solid red;
+    height: 60%;
+    width: 70%;
+    margin: auto;
+} */
 * {
     font-family: 'Roboto', 'Arial', sans-serif;
     text-decoration: none;
-    color: #000;
     box-sizing: border-box;
+    text-transform: uppercase;
 }
 
 body {
@@ -11,13 +73,29 @@ body {
 header {
     margin-bottom: 30px;
 }
+a {
+    color: #000;
+}
 nav {
-    padding-top: 10px;
+    padding: 10px;
     float: right;
 }
-.wrapper {
+.wrapper-background-slider {
+    background: url('../img/Rectangle 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main-wrapper:before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.4)
+} 
+
+header, main, footer {
     width: 1110px;
-    min-height: 900px;
     outline: 1px solid black;
     margin: auto;
 }
@@ -25,6 +103,7 @@ nav {
     font-size: 18px;
     list-style: none;
     margin: 0;
+    padding-bottom: 10px;
 }
 
 .navigation-item {
@@ -36,10 +115,24 @@ nav {
     font-size: 30px;
 }
 .slider-tours {
+    margin-top: 30px;
     height: 600px;
     border: 2px solid red;
 }
+
+.slider-tours:before {
+    display: block;
+    position: absolute;
+    left: 0;
+    content: "";
+    width: 100vw;
+    background: url('../img/Rectangle 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+}
 .slider-tours-content {
+    color: white;
     position: relative;
     top: 50%;
     left: 50%;
@@ -47,18 +140,117 @@ nav {
     display: inline-block;
     border: 2px solid green;
 }
-.slider-tours-content:before {
-    content: "";
-    display: inline-block;
+.slider-tours-content > h2 {
+    font-size: 55px;
+}
+.slider-tours-content > p {
+    font-size: 25px;
+}
+.arrow {
+    cursor: pointer;
+    font-size: 75px;
+    text-align: center;
     height: 105px;
     width: 100px;
-    border: 1ps solid blue;
+    border: 1px solid blue;
     position: absolute;
+}
+.left-arrow{
+    left: 0;
+    top: 50%;
+    transform: translate(-200%, -50%); 
+    background-color: rgba(84, 161, 143, 0.7);
+}
+.right-arrow{
+    top: 50%;
     right: 0;
+    transform: translate(200%, -50%); 
+    background-color: rgba(84, 161, 143, 0.7);
+}
+
+.collection-content {
+    height: 500px;
+    padding-bottom: 30px;
+    border: 2px solid green;
+}
+.collection-content-wrapper {
+    position: relative;
+    width: 255px;
+    border: 1px solid black;
+    min-height: 320px;
 }
 img {
+    max-width: 100%;
+}
+.name, .price {
+    outline: 1px solid red;
+    display: inline-block;
+    color: white;
+    padding: 7px;
+}
+.name {
+    width: 70%;
+    background: #323232;
+}
+.price {
+    margin-left: -4px;
+    width: 30%;
+    text-align: center;
+    background: #8c8c8c;
+}
+.collection-content:before {
+    display: block;
     position: absolute;
     left: 0;
+    content: "";
     width: 100vw;
-    min-height: 600px;
+    background: #e9f0fd;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: inherit;
+    z-index: -1;
+} 
+.modal-window {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 300px;
+    border: 3px solid yellow;
+    background: rgba(0, 0, 0, 0.4);
+}
+.heart, .arrows, .clock {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    outline: 1px solid black;
+    position: absolute;
+}
+.clock {
+    top: 0;
+    right: 0;
+}
+.arrows {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.recycle {
+    position: absolute;
+    bottom: 0;
+    outline: 1px solid red;
+    width: 100%;
+}
+.recycle p {
+    text-align: right;
+}
+.align {
+    position: relative;
+    margin: auto;
+    width: 175px;
+    height: 123px;
+    top: 50%;
+    transform: translate(0, -50%);
+    outline: 4px solid green;
 }
