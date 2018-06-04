@@ -1,17 +1,16 @@
 * {
     font-family: 'Roboto', Arial, sans-serif;
     text-decoration: none;
-    color: black;
     box-sizing: border-box;
 }
-
-/* NAVIGATION CSS ^ */
-
+/* Обертка */
 .wrapper {
     width: 1110px;
     margin: auto;
-    padding-top: 20px;
+    padding: 20px 0;
 }
+
+/* NAVIGATION CSS ^ */
 
 .logo {
     display: inline-block;
@@ -26,6 +25,10 @@ ul {
     margin: 0;
     list-style: none;
     float: right;
+}
+
+a {
+    color: black;
 }
 
 ul li {
