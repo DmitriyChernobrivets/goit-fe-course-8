@@ -56,7 +56,6 @@ nav {
 }
 
 .wrapper-background-tours {
-    width: 100vw;
     background-image: url('../img/Rectangle 1.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,7 +64,6 @@ nav {
 }
 
 .wrapper-background-collection {
-    width: 100vw;
     background: #e9f0fd;                                        /*Фон Collection секции */
     padding-bottom: 60px;
 }
@@ -164,7 +162,7 @@ img {
     background: rgba(0, 0, 0, 0.4);
 }
 
-.heart, .arrows, .clock {
+.icon-heart, .icon-arrows, .icon-clock {
     display: inline-block;
     height: 50px;                             /*Иконки модального окна*/
     width: 50px;
@@ -172,14 +170,14 @@ img {
     position: absolute;
 }
 
-.heart {
+.icon-heart {
     background: url('../img/heart.png');
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: 50% 50%;
 }
 
-.clock {
+.icon-clock {
     background: url('../img/clock.png');
     background-repeat: no-repeat;
     background-size: 70%;
@@ -188,7 +186,7 @@ img {
     right: 0;
 }
 
-.arrows {
+.icon-arrows {
     background: url('../img/arrow.png');
     background-repeat: no-repeat;
     background-size: 70%;
@@ -198,7 +196,7 @@ img {
     transform: translate(-50%, 0);
 }
 
-.recycle {
+.icon-recycle {
     background: url('../img/bag.png');
     background-repeat: no-repeat;
     background-position: 10% 50%;
@@ -211,11 +209,11 @@ img {
     color: #dee2e1;
 }
 
-.recycle p {
+.icon-recycle p {
     text-align: right;
 }
 
-.align {
+.align-icons {
     position: relative;
     margin: auto;
     width: 175px;                               
@@ -246,7 +244,7 @@ img {
 .collection-content:hover .price {
     background: #7fd9c7;
 }
-.heart:hover, .arrows:hover, .clock:hover, .recycle:hover {
+.icon-heart:hover, .icon-arrows:hover, .icon-clock:hover, .icon-recycle:hover {
     background-color: #1abc9c;
     color: white;
 }
