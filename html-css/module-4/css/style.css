@@ -3,19 +3,22 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
-h2, h3, p {
+/* Обнуляем стили, ненужные отступы*/
+h2, h3, p, ul, a {
     margin: 0;
+    padding: 0;
+    list-style: none;
+    color: black;
 }
 
-/* Обертка */
+/* Главная центровая обертка */
 .wrapper {
+    padding: 30px 0;
     width: 1110px;
     margin: auto;
-    padding: 20px 0;
 }
 
-/* NAVIGATION CSS ^ */
+/* Секция Навигации ^ */
 
 .logo {
     display: inline-block;
@@ -26,35 +29,29 @@ h2, h3, p {
     color: #4dc7ad;
 }
 
-ul {
-    margin: 0;
-    list-style: none;
+.navigation {
     float: right;
 }
 
-a {
-    color: black;
-}
-
-ul li {
+.navigation-item {
     display: inline-block;
     font-size: 16px;
     font-weight: bold;
     margin: 10px 0 0 30px;
 }
 
-ul li>a:hover {
+.navigation-item > a:hover {
     color: #4dc7ad;
 }
 
-/* FEATURE PRODUCTS    CSS */
+/* Секция с товарами    CSS */
 
 .featured-products {
     min-height: 950px;
     padding-top: 100px;
 }
 
-.section-header {
+.main-header {
     text-align: center;
     padding: 50px;
     font-size: 48px;
@@ -62,7 +59,7 @@ ul li>a:hover {
 
 }
 
-.section-header::after {
+.main-header:after {
     content: "";
     display: block;
     margin: 15px auto 0 auto;
@@ -102,15 +99,30 @@ img {
     background-color: grey;
     text-align: center;
 }
-
-/* BLOG CSS */
-
-.section-blog {
-    width: 350px;
-    height: 500px;
-    float: left;
-    margin: 0 10px 0 10px;
+ /* Свойства наведения */
+.products-container:hover .products-name {
+    background: #4dc7ad;
+    transition: .5s linear;
 }
+
+.products-container:hover .products-price {
+    background: #6ef7d9;
+    transition: .5s linear;
+}
+
+    /* Секция с блогом CSS */
+.wrapper-latest-news {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.wrapper-blog-item {
+    width: 350px;
+    min-height: 500px;
+    float: left;
+    text-align: left;
+    padding: 0 15px;
+ }
 
 h3, p {
     padding: 10px 0;
@@ -125,7 +137,16 @@ h3::after {
     margin: 5px 0 5px 0;
 }
 
-.btn {
+.wrapper-blog-item:nth-child(2) {
+    display: inline-block;
+    float: none;
+ }
+ 
+.wrapper-blog-item:last-child {
+    float: right;
+} 
+
+.btn {   
     display: inline-block;
     padding: 15px 35px;
     background-color: #4dc7ad;
@@ -133,20 +154,6 @@ h3::after {
     font-size: 16px;
     color: white;
     margin-top: 15px;
-}
-
-.latest-news {
-    padding-top: 30px;
-}
-
-.products-container:hover .products-name {
-    background: #4dc7ad;
-    transition: .5s linear;
-}
-
-.products-container:hover .products-price {
-    background: #6ef7d9;
-    transition: .5s linear;
 }
 
 .clearfix::after {
