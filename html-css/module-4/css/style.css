@@ -3,6 +3,11 @@
     text-decoration: none;
     box-sizing: border-box;
 }
+
+h2, h3, p {
+    margin: 0;
+}
+
 /* Обертка */
 .wrapper {
     width: 1110px;
@@ -51,9 +56,10 @@ ul li>a:hover {
 
 .section-header {
     text-align: center;
-    padding: 40px;
+    padding: 50px;
     font-size: 48px;
     font-weight: bold;
+
 }
 
 .section-header::after {
@@ -104,6 +110,10 @@ img {
     height: 500px;
     float: left;
     margin: 0 10px 0 10px;
+}
+
+h3, p {
+    padding: 10px 0;
 }
 
 h3::after {
