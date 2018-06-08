@@ -31,6 +31,7 @@ figure {
 }
 
 a {
+    transition: .2s linear;
     font-weight: bold;
     color: #95e1d3;
 }
@@ -39,15 +40,13 @@ a {
     font-size: 30px;
 }
 
-nav > a:hover {
-    color: #f38181;
-}
 nav {
     border: 1px solid white;
     display: flex;
     justify-content: space-between;
 }
 .navigation li > a:hover {
+    transition: .2s linear;
     color: #f38181;
     border-bottom: 2px solid #f38181;
 }
@@ -149,10 +148,6 @@ figcaption {
     text-align: center;
 }
 
-.worker1 {background-image: url(../img/our-team-1.png);}
-.worker2 {background-image: url(../img/our-team-2.png);}
-.worker3 {background-image: url(../img/out-team-3.png);}
-
 .img-holder {
     position: relative;
     width: 380px;
@@ -174,6 +169,10 @@ main {
     flex-grow: 1;
 }
 
+.img-holder > img {
+    position: absolute;
+}
+
 .icon {
     width: 55px;
     height: 55px;
@@ -182,7 +181,6 @@ main {
     line-height: 65px;
     text-align: center;
     vertical-align: middle;
-    display: inline-block;
     margin: 2px;
     transition: .2s linear;
     cursor: pointer;
