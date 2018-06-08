@@ -1,7 +1,6 @@
 * {
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 14px;
-
 }
 
 .wrapper {
@@ -76,12 +75,12 @@ p {
     text-align: center;
 }
 
-.main-header>h3 {
+.main-header > h3 {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
 }
 
-.main-header>h1 {
+.main-header > h1 {
     text-transform: uppercase;
     padding: 22px 0 20px 0;
 }
@@ -117,7 +116,7 @@ img {
     transition: .2s;
 }
 
-figure>.img-holder:hover {
+figure > .img-holder:hover {
     transform: translate(-15px, -15px);
     box-shadow: 15px 15px 1px #95e1d3;
     transition: .2s linear;
@@ -153,11 +152,11 @@ figcaption {
 .worker1 {background-image: url(../img/our-team-1.png);}
 .worker2 {background-image: url(../img/our-team-2.png);}
 .worker3 {background-image: url(../img/out-team-3.png);}
+
 .img-holder {
     position: relative;
     width: 380px;
     height: 470px;
-    outline: 1px solid green;
     transition: .2s linear;
     display: flex;
     justify-content: center;
