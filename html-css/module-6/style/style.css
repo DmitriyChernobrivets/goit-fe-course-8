@@ -45,7 +45,8 @@ nav {
     display: flex;
     justify-content: space-between;
 }
-.navigation li > a:hover {
+
+.navigation .navigation-menu > a:hover {
     transition: .2s linear;
     color: #f38181;
     border-bottom: 2px solid #f38181;
@@ -72,6 +73,7 @@ p {
 
 .main-header {
     text-align: center;
+    z-index: 100;
 }
 
 .main-header > h3 {
@@ -82,6 +84,7 @@ p {
 .main-header > h1 {
     text-transform: uppercase;
     padding: 22px 0 20px 0;
+
 }
 
 .our-team > p {
@@ -158,14 +161,14 @@ figcaption {
     align-items: center;
 }
 
-footer {
+.footer {
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-main {
+.main {
     flex-grow: 1;
 }
 
@@ -178,7 +181,7 @@ main {
     height: 55px;
     background-color: #fce38a;
     color: #f38181;
-    line-height: 65px;
+    line-height: 55px;
     text-align: center;
     vertical-align: middle;
     margin: 2px;
@@ -186,7 +189,7 @@ main {
     cursor: pointer;
 }
 
-i {
+.icon > i {
     font-size: 33px;
     line-height: inherit;
 }
@@ -240,4 +243,50 @@ input {
     border: none;
     font-weight: bold;
     cursor: pointer;
+}
+
+                            /* Выпадающее меню */
+
+.navigation-menu-item-list {
+    position: absolute;
+    width: 105px;
+    opacity: 0;
+    z-index: -1;
+}
+
+.navigation-menu-item > a {
+    color: white;
+}
+
+.navigation-menu-item {
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    margin: 5px 0;
+    background-color: #95e1d3;
+}
+
+.navigation-menu {
+    position: relative;
+    transition: .2s linear;
+}
+
+.navigation-menu:hover .navigation-menu-item-list {
+    opacity: 1;
+    z-index: 100;
+    transition: .2s linear;
+}
+
+.navigation-menu-item>a:hover {
+    color: #f38181;
+}
+
+.fa-bars {
+    position: absolute;
+    font-size: 18px;
+    opacity: 0.6;
+    color: #070707;
+    left:-20px;
 }
