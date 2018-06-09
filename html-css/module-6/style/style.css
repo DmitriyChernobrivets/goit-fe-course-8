@@ -41,9 +41,12 @@ a {
 }
 
 nav {
-    border: 1px solid white;
+    position: fixed;
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 1000000;
 }
 
 .navigation .navigation-menu > a:hover {
