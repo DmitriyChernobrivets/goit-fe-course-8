@@ -31,7 +31,7 @@ h2, h3, p, ul, a {
 
 .navigation {
     float: right;
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .navigation-item {
@@ -73,11 +73,15 @@ h2, h3, p, ul, a {
 .products-container {
     width: 276px;
     float: left;
-    padding: 15px;
+    padding: 0 15px 35px 0;
+}
+
+.products-container:nth-child(4n+5) {
+    padding-right: 0;
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
 }
 
 .products-name,
@@ -101,6 +105,7 @@ img {
     background-color: grey;
     text-align: center;
 }
+
  /* Свойства наведения */
 .products-container:hover .products-name {
     background: #4dc7ad;
@@ -113,17 +118,19 @@ img {
 }
 
     /* Секция с блогом CSS */
-.wrapper-latest-news {
-    text-align: center;
+.wrapper-latest-news-main {
     padding-top: 30px;
 }
 
 .wrapper-blog-item {
-    width: 350px;
+    width: 369px;
     min-height: 500px;
     float: left;
-    text-align: left;
-    padding: 0 15px;
+    padding: 0 15px 35px 0;
+ }
+
+ .wrapper-blog-item:nth-child(3) {
+     padding-right: 0;
  }
 
 .blog-header, p {
@@ -137,15 +144,6 @@ img {
     width: 120px;
     background-color: #4dc7ad;
     margin: 5px 0 5px 0;
-}
-
-.wrapper-blog-item:nth-child(2) {
-    display: inline-block;
-    float: none;
- }
- 
-.wrapper-blog-item:last-child {
-    float: right;
 } 
 
 .btn {   

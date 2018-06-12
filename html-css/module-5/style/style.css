@@ -5,7 +5,9 @@
     text-transform: uppercase;
 }
 
+/* button {
 
+} */
 
 header {
     padding: 30px 0;
@@ -15,21 +17,18 @@ a {
     color: #000;
 }
 
-nav {
-    padding: 10px;
-    float: right;
-}
-
 .wrapper-align {
     width: 1110px;
     margin: auto;                                       /*Блок выравнивающий весь контент по центру */
+    position: relative;
 }
 
 .navigation {
     font-size: 18px;
     list-style: none;
     margin: 0;
-    padding-bottom: 10px;
+    float: right;
+    padding-top: 10px;
 }
 
 .navigation-item {
@@ -45,9 +44,11 @@ nav {
 .logo::first-letter {
     color: #1abc9c;
 }
+
 .navigation-item a:hover {
     color: #1abc9c;
 }
+
 .slider-tours {
     margin-top: 30px;
     height: 600px;
@@ -83,32 +84,24 @@ nav {
     font-size: 25px;
 }
 
-.slider-tours-content:before {
-    content: "\003C";
-    font-size: 75px;
-    text-align: center;
-    height: 105px;
-    width: 100px;                                                   /*Левая стрелочка слайдера*/
+.btn {
     position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translate(-200%, -50%); 
-    background-color: rgba(84, 161, 143, 0.7);
+    width: 90px;
+    height: 80px;
+    background-color: #1abc9c;
+    border: none;
+    font-size: 60px;
+    color: white;
     cursor: pointer;
 }
 
-.slider-tours-content:after {
-    content: "\003E";
-    font-size: 75px;
-    text-align: center;
-    height: 105px;
-    width: 100px;
-    position: absolute;                                               /*Правая стрелочка слайдера*/
-    top: 50%;
+.slider-left-btn {
+    top: 48%;
+}
+
+.slider-right-btn {
+    top: 48%;
     right: 0;
-    transform: translate(200%, -50%); 
-    background-color: rgba(84, 161, 143, 0.7);
-    cursor: pointer;
 }
 
 .collection-content {
@@ -116,11 +109,7 @@ nav {
     margin-right: 25px;
     position: relative;
     width: 255px;                                                     /*Внутрений блок контента*/
-    min-height: 320px;
-}
-
-.collection-content:hover .modal-window {
-    display: block;
+    height: 320px;
 }
 
 .collection-content:last-child {
@@ -136,6 +125,8 @@ img {
     display: inline-block;
     color: white;
     padding: 7px;
+    transition: .2s linear;
+    cursor: pointer;
 }
 
 .name {
@@ -151,14 +142,15 @@ img {
 }
 
 .modal-window {
-    display: none;
+    opacity: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 200px;
-    height: 300px;
+    width: 90%;
+    height: 93%;
     background: rgba(0, 0, 0, 0.4);
+    transition: .2s linear;
 }
 
 .icon-heart, .icon-arrows, .icon-clock {
@@ -167,6 +159,8 @@ img {
     width: 50px;
     border: 1px solid white;
     position: absolute;
+    transition: .2s linear;
+    cursor: pointer;
 }
 
 .icon-heart {
@@ -174,6 +168,7 @@ img {
     background-repeat: no-repeat;
     background-size: 70%;
     background-position: 50% 50%;
+    transition: .2s linear;
 }
 
 .icon-clock {
@@ -206,6 +201,7 @@ img {
     width: 100%;
     padding-right: 15px;
     color: #dee2e1;
+    cursor: pointer;
 }
 
 .icon-recycle p {
@@ -236,16 +232,24 @@ img {
     background-color: #1abc9c;
 }
 
+.collection-content:hover .modal-window {
+    opacity: 1;
+    transition: .2s linear;
+}
+
 .collection-content:hover .name {
     background: #1abc9c;
+    transition: .2s linear;
 }
 
 .collection-content:hover .price {
     background: #7fd9c7;
+    transition: .2s linear;
 }
 .icon-heart:hover, .icon-arrows:hover, .icon-clock:hover, .icon-recycle:hover {
     background-color: #1abc9c;
     color: white;
+    transition: .2s linear;
 }
 
 .copyright {
