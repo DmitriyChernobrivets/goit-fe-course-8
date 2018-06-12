@@ -116,5 +116,5 @@ input:not(:nth-child(3)):valid {
     color: white;
 }
 input:focus , textarea:focus{
-    outline: 2px solid var(--yellow-color);
+    background-color: rgb(248, 248, 214);
 }
