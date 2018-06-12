@@ -1,0 +1,120 @@
+:root {
+    --yellow-color: #fed136;
+}
+  * {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;\
+    box-sizing: border-box;
+}
+input, textarea, button {
+    border: none;
+    border-radius: 3px;
+}
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+    padding-top: 40px;
+    width: 950px;
+    margin: 0 auto;
+}
+.bg-wrapper {
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contacts, .services {
+    padding: 50px 0 80px 0;
+}
+.logo{
+    font-family: 'Wisdom', Arial, sans-serif;
+    font-size: 26px;
+    color: var(--yellow-color);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    padding-top: 10px;
+    float: left;
+    margin-left: 60px;
+}
+.menu li a:hover {
+    color: var(--yellow-color);
+}
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.header h1 {
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+.header p {
+    font-size: 16px;
+    font-family: 'DroidSerif', Arial, sans-serif;
+    color: #777777;
+}
+.service-content {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.service-content > li {
+    flex-basis: 30%;
+}
+.service-content > li h3 {
+    padding: 25px 0;
+}
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.contacts > .header h1 {
+    color: white;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 45%;
+    justify-content: space-between;
+    
+}
+
+.inputs > input {
+    height: 50px;
+    padding-left: 20px;
+}
+.form textarea {
+    flex-basis: 49%;
+    padding: 15px 0 0 20px;
+    box-sizing: border-box;
+}
+.form button {
+    font-weight: 700;
+    margin: 25px auto;
+    padding: 25px 35px;
+    background-color: var(--yellow-color);
+    cursor: pointer;
+    font-size: 18px;
+}
+input:not(:nth-child(3)):valid {
+    outline: 2px solid rgb(82, 235, 82);
+}
+.form button:hover {
+    color: white;
+}
+input:focus , textarea:focus{
+    outline: 2px solid var(--yellow-color);
+}
