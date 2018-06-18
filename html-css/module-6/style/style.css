@@ -140,17 +140,14 @@ h5 {
 figure {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 380px;
-    min-height: 470px;
+
 }
 
 figcaption {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    text-align: center;
+    align-items: center;
 }
 
 .img-holder {
