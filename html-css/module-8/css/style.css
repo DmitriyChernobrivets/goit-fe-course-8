@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+}
+header {
+    border: 1px solid black;
+}
+.wrapper {
+    min-height: 520px;
+    padding: 15px;
+    text-align: center;
+}
+.wrapper-bg {
+    background-image: url(../img/Bg-image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.logo {
+    padding: 10px;
+}
+.logo > a{
+    font-size: 20px;
+}
+.one > p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+ul li {
+    padding: 10px;
+    color: white;
+}
+ul li:last-child {
+    border-radius: 15px;
+    border: 1px solid white;
+}
+h1 {
+    padding: 30px 0 ;
+    font-size: 30px;
+}
+.img-holder {
+    display: inline-block;
+    position: relative;
+    border: 1px solid black;
+}
+.btn-find-partner { 
+    background-color: #ff4e50; 
+}
+
+span {
+    position: absolute;
+    line-height: 33px;
+    vertical-align: middle;
+    bottom: 0;
+    right: 0;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid white;
+    color: white;
+    background:#ff4e50;
+}
+.icon-telegram {background-color: #4e73db}
+.icon-coffee {background-color: #1cd7ad}
+.icon-flask {background-color: #ffa507}
+
+.btn {
+    padding: 15px 45px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+}
+.partners {
+    padding: 15px 0;
+}
+
+.partner-discription {
+    width: 60%;
+    margin: 0 auto;
+}
+.btn-other-partners {
+    background-color: white;
+    border: 2px solid #ff4e50;
+    padding: 15px 65px;
+}
+h2 {
+    padding-top: 70px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media screen and (min-width: 320px) {
+    header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .wrapper-bg {
+        background-image: url(../img/bg-image-3.png);
+        background-size: cover;
+        background-color: rgb(214, 212, 212);
+        background-blend-mode: multiply;
+    }
+    .wrapper {
+        padding: 50px;
+        min-height: 700px;
+        min-width: 320px;
+        /* margin: 0 auto; */
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .one > p {
+        font-size: 24px;
+    }
+    .partners {
+        flex-basis: 40%;
+    }
+    .partners-block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .btn {
+        margin: 0 auto;
+    }
+}
