@@ -28,7 +28,7 @@ figure {
     text-decoration: none;
 }
 
-nav a {
+.header a {
     transition: .2s linear;
     font-weight: bold;
     color: #95e1d3;
@@ -38,7 +38,7 @@ nav a {
     font-size: 30px;
 }
 
-nav {
+.header {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .services-content-main {
@@ -249,4 +249,9 @@ input {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    transition: .2s linear;
+}
+.subscribe-item:hover {
+    color: #f38181;
+    transition: .2s linear;
 }

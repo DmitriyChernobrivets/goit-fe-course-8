@@ -5,6 +5,9 @@
     font-family: 'Montserrat', Arial, sans-serif;
     box-sizing: border-box;
 }
+body {
+    width: 100%;
+}
 a {
     text-decoration: none;
 }
@@ -20,7 +23,6 @@ header {
     background-image: url(../img/Bg-image.png);
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 .logo {
     padding: 10px;
