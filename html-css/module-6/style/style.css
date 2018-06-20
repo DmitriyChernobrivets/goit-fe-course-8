@@ -28,7 +28,7 @@ figure {
     text-decoration: none;
 }
 
-nav a {
+.header a {
     transition: .2s linear;
     font-weight: bold;
     color: #95e1d3;
@@ -38,7 +38,7 @@ nav a {
     font-size: 30px;
 }
 
-nav {
+.header {
     position: fixed;
     display: flex;
     justify-content: space-between;
@@ -57,7 +57,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-basis: 60%;
+    flex-basis: 50%;
 }
 
 .services-content-main {
@@ -140,17 +140,14 @@ h5 {
 figure {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 380px;
-    min-height: 470px;
+
 }
 
 figcaption {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    text-align: center;
+    align-items: center;
 }
 
 .img-holder {
@@ -249,4 +246,9 @@ input {
     border: none;
     font-weight: bold;
     cursor: pointer;
+    transition: .2s linear;
+}
+.subscribe-item:hover {
+    color: #f38181;
+    transition: .2s linear;
 }
