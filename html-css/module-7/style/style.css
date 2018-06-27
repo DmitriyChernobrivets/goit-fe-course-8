@@ -122,6 +122,7 @@ nav {
     background-color: var(--yellow-color);
     cursor: pointer;
     font-size: 18px;
+    transition: .3s linear;
 }
 input:not(:nth-child(3)):valid {
     outline: 2px solid rgb(82, 235, 82);
