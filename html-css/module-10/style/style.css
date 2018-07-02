@@ -7,7 +7,7 @@
     height: 100%;
     width: 1200px;
     margin: auto;
-    padding: 15px 0;
+    padding-bottom: 15px;
 }
 
 .main {
@@ -34,7 +34,7 @@ figure {
     color: #95e1d3;
 }
 
-.logo a {
+.header-logo__link {
     font-size: 30px;
 }
 
@@ -43,24 +43,25 @@ figure {
     display: flex;
     justify-content: space-between;
     width: 1200px;
-    background: rgba(255, 255, 255, 0.7);
+    background: rgb(255, 255, 255);
     z-index: 1000000;
+    padding-top: 15px;
 }
 
-.navigation .navigation-menu>a:hover {
+.header-nav .header-nav__link:hover {
     transition: .2s linear;
     color: #f38181;
     border-bottom: 2px solid #f38181;
 }
 
-.navigation {
+.header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-basis: 50%;
 }
 
-.services-content-main {
+.services-content {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -73,29 +74,29 @@ p {
     color: rgba(0, 0, 0, 0.4);
 }
 
-.main-header {
+.align {
     text-align: center;
     z-index: 100;
 }
 
-.main-header>h3 {
+.row-up {
     font-size: 24px;
     font-family: 'Kaushan Script', cursive;
 }
 
-.main-header>h1 {
+.row-down {
     text-transform: uppercase;
     padding: 22px 0 0 0;
 }
 
-.main-header>p {
+.our-team-head__paragraph {
     width: 950px;
     margin: auto;
     text-align: center;
     padding-bottom: 70px;
 }
 
-.main-header>h1::after {
+.row-down::after {
     content: "";
     display: block;
     width: 60px;
@@ -104,23 +105,22 @@ p {
     margin: 45px auto;
 }
 
-.services-content-wrapper {
+.services-content-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 100px;
     flex-basis: 31%;
 }
 
-.service-content {
+.service-content-box__discription {
     flex-basis: 85%;
 }
 
 img {
-    display: block;
     transition: .2s;
 }
 
-figure>.img-holder:hover {
+.our-team-item__img-holder:hover {
     transform: translate(-15px, -15px);
     box-shadow: 15px 15px 1px #95e1d3;
     transition: .2s linear;
@@ -137,20 +137,20 @@ h5 {
     justify-content: space-between;
 }
 
-figure {
+.our-team-item__box {
     display: flex;
     flex-direction: column;
 
 }
 
-figcaption {
+.our-team-item__discription {
     display: flex;
     flex-direction: column;
     padding-top: 30px;
     align-items: center;
 }
 
-.img-holder {
+.our-team-item__img-holder {
     position: relative;
     width: 380px;
     height: 470px;
@@ -172,13 +172,15 @@ figcaption {
     flex-grow: 1;
 }
 
-.img-holder>img {
+.our-team-item_worker-img {
     position: absolute;
 }
 
-.icon {
+.our-team-item__icon {
     width: 55px;
     height: 55px;
+    padding: 8px;
+    box-sizing: border-box;
     background-color: #fce38a;
     color: #f38181;
     line-height: 55px;
@@ -189,26 +191,26 @@ figcaption {
     cursor: pointer;
 }
 
-.icon>i {
+/* .our-team-item__icon>i {
     font-size: 33px;
     line-height: inherit;
-}
+} */
 
-.icon:hover {
+.our-team-item__icon:hover {
     transition: .2s linear;
     background-color: #95e1d3;
 }
 
-.img-holder:hover::after {
+.our-team-item__img-holder:hover::after {
     opacity: 0.7;
     transition: .2s linear;
 }
 
-.img-holder:hover .icon {
+.our-team-item__img-holder:hover .our-team-item__icon {
     z-index: 100;
 }
 
-.img-holder::after {
+.our-team-item__img-holder::after {
     content: "";
     position: absolute;
     opacity: 0;
@@ -219,11 +221,11 @@ figcaption {
     background: linear-gradient(to top, rgb(252, 227, 138), rgb(243, 129, 129));
 }
 
-.template-author {
+.footer__author {
     color: #f38181;
 }
 
-input {
+.footer__input {
     height: 35px;
     line-height: 33px;
     width: 60%;
@@ -231,12 +233,12 @@ input {
     border: 1px solid rgb(223, 218, 218);
 }
 
-.subscribe {
+.footer__subscribe {
     display: flex;
     flex-basis: 30%;
 }
 
-.subscribe-item {
+.footer__subscribe-item {
     height: inherit;
     color: white;
     flex-grow: 1;
@@ -248,7 +250,7 @@ input {
     cursor: pointer;
     transition: .2s linear;
 }
-.subscribe-item:hover {
+.footer__subscribe-item:hover {
     color: #f38181;
     transition: .2s linear;
 }
