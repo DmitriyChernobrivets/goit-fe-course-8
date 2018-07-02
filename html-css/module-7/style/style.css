@@ -127,7 +127,7 @@ nav {
 input:not(:nth-child(3)):valid {
     outline: 2px solid rgb(82, 235, 82);
 }
-input:not(:nth-child(3)):invalid {
+input:not(:nth-child(3)):focus:invalid {
     outline: 2px solid rgb(230, 24, 24);
 }
 .form button:hover {
