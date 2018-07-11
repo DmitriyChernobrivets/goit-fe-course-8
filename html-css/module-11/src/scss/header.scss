@@ -1,0 +1,83 @@
+@import 'variables';
+.wrapper-bg {
+  position: relative;
+  padding-bottom: 130px;
+  @include background($gradient, '../img/Eagle.png', no-repeat, center, cover);
+}
+
+.header {
+  margin-bottom: 175px;
+  @include flex(space-between,
+  center,
+  nowrap);
+  .logo {
+    padding: 10px 0;
+    @include fonts(30px,
+    'Montserrat-bold',
+    $header-text-color)
+  }
+  .navigation {
+    @include flex(space-between,
+    center,
+    nowrap);
+    &_item {
+      margin-left: 50px;
+      padding: 10px 0;
+    }
+    &_link {
+      color: $header-text-color;
+      text-transform: uppercase;
+      font-weight: 700;
+      padding: 10px 0;
+      transition: .1s linear;
+      &:hover,
+        {
+        color: $yellow-color;
+        border-bottom: 3px solid $yellow-color;
+        transition: .1s linear;
+      }
+      &:hover .svg-icon-head {
+        fill: $yellow-color;
+        transition: .1s linear;
+        transform: scale(1.4);
+      }
+    }
+    .svg-icon-head {
+      fill: $header-text-color;
+    }
+  }
+}
+
+.main-head {
+  display: inline-block;
+  &_top {
+    @include fonts(72px,
+    'KaushanScript',
+    $header-text-color);
+    margin-bottom: 50px;
+  }
+  &_bottom {
+    @include fonts(150px,
+    'Montserrat-bold',
+    $header-text-color);
+    margin-bottom: 130px;
+    text-transform: uppercase;
+  }
+  &_btn {
+    padding: 15px 30px;
+    border: 2px solid $header-text-color;
+    @include fonts(14px,
+    'Montserrat-bold',
+    $header-text-color);
+    border: 3px solid $header-text-color;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .1s linear;
+    &:hover {
+      border-color: $pink-color;
+      color: $pink-color;
+      transition: .1s ease;
+      transform: scale(1.2);
+    }
+  }
+}

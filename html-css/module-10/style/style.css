@@ -3,12 +3,7 @@
 @import "our-team/our-team.css";
 @import "footer/footer.css";
 @import "common/common.css";
-
-* {
-    font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 14px;
-}
-
+@import "fonts.css";
 
 
 

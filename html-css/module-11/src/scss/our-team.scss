@@ -1,0 +1,91 @@
+.team-head {
+  margin-bottom: 90px;
+  &_top {
+    @include fonts(24px, 'KaushanScript', $services-text-color);
+    margin-bottom: 20px;
+  }
+  &_bottom {
+    @include fonts(30px, 'Montserrat-bold', $services-text-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    &::after {
+      margin-top: 40px;
+      @extend %pseudo-base;
+    }
+  }
+  &_discription {
+    width: 990px;
+    margin: 0 auto;
+    line-height: 20px;
+    color: $discription-color;
+  }
+}
+
+.our-team {
+  padding-bottom: 75px;
+  @include flex(space-between, unset, nowrap);
+  &_name {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  &_specialty {
+    @include fonts(15px, 'Roboto', $discription-color);
+  }
+}
+
+.our-team_img-holder {
+  position: relative;
+  @include flex(center, center, nowrap);
+  @include box-size(380px, 470px);
+  transition: .2s linear;
+  margin-bottom: 30px;
+  >img {
+    position: absolute;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: $gradient;
+  }
+  &:hover::after {
+    opacity: 1;
+    transition: .2s linear;
+  }
+  &:hover .our-team_icon {
+    opacity: 1;
+    z-index: 100;
+    transition: .2s linear;
+  }
+  &:hover {
+    transform: translate(-15px, -15px);
+    box-shadow: 15px 15px 1px #95e1d3;
+    transition: .2s linear;
+  }
+}
+
+.our-team_icon {
+  @include box-size(55px, 55px);
+  padding: 8px;
+  background-color: $yellow-color;
+  color: $pink-color;
+  margin: 2px;
+  transition: .2s linear;
+  cursor: pointer;
+  opacity: 0;
+  &:hover {
+    background-color: $pink-color;
+  }
+  &:hover .svg-icon {
+    fill: $header-text-color;
+  }
+}
+
+.svg-icon {
+  fill: $pink-color;
+}

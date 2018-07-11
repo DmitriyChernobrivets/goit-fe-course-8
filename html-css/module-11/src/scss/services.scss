@@ -1,0 +1,39 @@
+.service-head {
+  &::after {
+    @extend %pseudo-base;
+  }
+  &_top {
+    @include fonts(24px, 'KaushanScript', $services-text-color);
+    margin-bottom: 20px;
+  }
+  &_bottom {
+    @include fonts(30px, 'Montserrat-bold', $services-text-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+  }
+}
+
+.service-list {
+  @include flex(space-between, unset, wrap);
+}
+
+.service-item {
+  @include flex(space-between, unset, wrap);
+  flex-basis: 370px;
+  margin-bottom: 100px;
+  &_box {
+    flex-basis: 84%;
+    text-align: left;
+  }
+  &_svg {
+    fill: $main-content-color;
+  }
+  &_name {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  &_discription {
+    line-height: 20px;
+    @include fonts(15px, 'Roboto', $discription-color);
+  }
+}

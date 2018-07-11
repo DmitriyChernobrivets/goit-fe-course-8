@@ -79,16 +79,11 @@
 }
 
 .our-team-item__icon {
-    width: 55px;
-    height: 55px;
+    width: 32px;
+    height: 33px;
     padding: 8px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
     background-color: #fce38a;
     color: #f38181;
-    line-height: 55px;
-    text-align: center;
-    vertical-align: middle;
     margin: 2px;
     -webkit-transition: .2s linear;
     -o-transition: .2s linear;

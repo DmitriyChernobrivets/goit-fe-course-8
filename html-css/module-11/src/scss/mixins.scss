@@ -1,0 +1,23 @@
+@mixin flex($justify-content, $align-items, $wrap) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-wrap: $wrap;
+}
+
+@mixin fonts($size, $family, $color) {
+  font-size: $size;
+  font-family: $family, Arial, sans-serif;
+  color: $color;
+}
+
+@mixin box-size($width, $height) {
+  width: $width;
+  min-height: $height;
+}
+@mixin background ($gradient, $url, $repeat, $position, $size) {
+  background: $gradient, url($url);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}

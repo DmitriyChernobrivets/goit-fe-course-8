@@ -1,0 +1,28 @@
+.footer {
+  @include flex(space-between, center, nowrap);
+  border-top: 1px solid $discription-color;
+  padding-top: 10px;
+  &_author {
+    color: $pink-color;
+  }
+}
+
+.footer_subscribe {
+  display: flex;
+  &-input {
+    @include box-size(230px, 45px);
+    padding-left: 15px;
+    border: 1px solid $discription-color;
+  }
+  &-btn {
+    background-color: $main-content-color;
+    padding: 15px 30px;
+    @include fonts(15px, 'Montserrat-bold', $header-text-color);
+    cursor: pointer;
+    transition: .1s linear;
+    &:hover {
+      color: $yellow-color;
+      transition: .1s linear;
+    }
+  }
+}
