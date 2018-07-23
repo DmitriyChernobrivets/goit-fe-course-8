@@ -21,3 +21,16 @@
   background-position: $position;
   background-size: $size;
 }
+%pseudo-base {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 5px;
+  background-color: $pink-color;
+  margin: 0 auto 45px;
+}
+
+%pseudo {
+  display: block;
+  content: "";
+}
