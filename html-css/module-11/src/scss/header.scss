@@ -2,24 +2,20 @@
 .wrapper-bg {
   position: relative;
   padding-bottom: 130px;
-  @include background($gradient, '../img/Eagle.png', no-repeat, center, cover);
+  @include background($gradient, '../img/Eagle.png');
 }
 
 .header {
   margin-bottom: 175px;
-  @include flex(space-between,
-  center,
-  nowrap);
+  @extend %flex-base;
   .logo {
     padding: 10px 0;
-    @include fonts(30px,
-    'Montserrat-bold',
-    $header-text-color)
+    @extend %font-mont-bold;
+    font-size: 30px;
+    color: $header-text-color
   }
   .navigation {
-    @include flex(space-between,
-    center,
-    nowrap);
+    @extend %flex-base;
     &_item {
       margin-left: 50px;
       padding: 10px 0;
@@ -29,16 +25,16 @@
       text-transform: uppercase;
       font-weight: 700;
       padding: 10px 0;
-      transition: .1s linear;
+      @extend %transition;
       &:hover,
         {
         color: $yellow-color;
         border-bottom: 3px solid $yellow-color;
-        transition: .1s linear;
+        @extend %transition;
       }
       &:hover .svg-icon-head {
         fill: $yellow-color;
-        transition: .1s linear;
+        @extend %transition;
         transform: scale(1.4);
       }
     }
@@ -51,32 +47,31 @@
 .main-head {
   display: inline-block;
   &_top {
-    @include fonts(72px,
-    'KaushanScript',
-    $header-text-color);
+    @extend %font-Kaushan;
+    font-size: 72px;
+    color: $header-text-color;
     margin-bottom: 50px;
   }
   &_bottom {
-    @include fonts(150px,
-    'Montserrat-bold',
-    $header-text-color);
+    @extend %font-mont-bold;
+    font-size: 150px;
+    color: $header-text-color;
     margin-bottom: 130px;
     text-transform: uppercase;
   }
   &_btn {
     padding: 15px 30px;
     border: 2px solid $header-text-color;
-    @include fonts(14px,
-    'Montserrat-bold',
-    $header-text-color);
+    @extend %font-mont-bold;
+    color: $header-text-color;
     border: 3px solid $header-text-color;
     cursor: pointer;
     text-transform: uppercase;
-    transition: .1s linear;
+    @extend %transition;
     &:hover {
       border-color: $pink-color;
       color: $pink-color;
-      transition: .1s ease;
+      @extend %transition;
       transform: scale(1.2);
     }
   }

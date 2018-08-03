@@ -1,16 +1,18 @@
 .team-head {
   margin-bottom: 90px;
   &_top {
-    @include fonts(24px, 'KaushanScript', $services-text-color);
+    @extend %font-Kaushan;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   &_bottom {
-    @include fonts(30px, 'Montserrat-bold', $services-text-color);
+    font-size: 30px;
+    @extend %font-mont-bold;
     margin-bottom: 40px;
     text-transform: uppercase;
     &::after {
       margin-top: 40px;
-      @extend %pseudo-base;
+      @include underline($pink-color, 45px);
     }
   }
   &_discription {
@@ -23,21 +25,23 @@
 
 .our-team {
   padding-bottom: 75px;
-  @include flex(space-between, unset, nowrap);
+  @extend %flex-base;
   &_name {
     margin-bottom: 15px;
     text-transform: uppercase;
   }
   &_specialty {
-    @include fonts(15px, 'Roboto', $discription-color);
+    @extend %font-roboto;
   }
 }
 
 .our-team_img-holder {
   position: relative;
-  @include flex(center, center, nowrap);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   @include box-size(380px, 470px);
-  transition: .2s linear;
+  @extend %transition;
   margin-bottom: 30px;
   >img {
     position: absolute;
@@ -55,17 +59,17 @@
   }
   &:hover::after {
     opacity: 1;
-    transition: .2s linear;
+    @extend %transition;
   }
   &:hover .our-team_icon {
     opacity: 1;
     z-index: 100;
-    transition: .2s linear;
+    @extend %transition;
   }
   &:hover {
     transform: translate(-15px, -15px);
     box-shadow: 15px 15px 1px #95e1d3;
-    transition: .2s linear;
+    @extend %transition;
   }
 }
 
@@ -75,7 +79,7 @@
   background-color: $yellow-color;
   color: $pink-color;
   margin: 2px;
-  transition: .2s linear;
+  @extend %transition;
   cursor: pointer;
   opacity: 0;
   &:hover {

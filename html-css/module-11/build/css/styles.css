@@ -378,14 +378,73 @@ template {
   display: none;
 }
 
+.header,
+.header .navigation,
+.service-list,
+.service-item,
+.our-team,
+.footer {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
 .service-head::after,
 .team-head_bottom::after {
   display: block;
   content: "";
   width: 60px;
-  height: 5px;
-  background-color: #f38181;
-  margin: 0 auto 45px;
+  height: 3px;
+}
+
+.wrapper-bg {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-head_top,
+.service-head_top,
+.team-head_top {
+  font-family: "KaushanScript", Arial, sans-serif;
+}
+
+.header .logo,
+.main-head_bottom,
+.main-head_btn,
+.service-head_bottom,
+.team-head_bottom,
+.footer_subscribe-btn {
+  font-family: "Montserrat-bold", Arial, sans-serif;
+}
+
+.service-item_discription,
+.our-team_specialty {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #b3b3b3;
+}
+
+.header .navigation_link,
+.header .navigation_link:hover,
+.header .navigation_link:hover .svg-icon-head,
+.main-head_btn,
+.main-head_btn:hover,
+.our-team_img-holder,
+.our-team_img-holder:hover::after,
+.our-team_img-holder:hover .our-team_icon,
+.our-team_img-holder:hover,
+.our-team_icon,
+.footer_subscribe-btn,
+.footer_subscribe-btn:hover {
+  -webkit-transition: .1s linear;
+  -o-transition: .1s linear;
+  transition: .1s linear;
 }
 
 body,
@@ -481,54 +540,16 @@ a {
   background: -webkit-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(248, 142, 130, 0.9)), url("../img/Eagle.png");
   background: -o-linear-gradient(bottom, rgba(252, 227, 138, 0.9), rgba(248, 142, 130, 0.9)), url("../img/Eagle.png");
   background: linear-gradient(to top, rgba(252, 227, 138, 0.9), rgba(248, 142, 130, 0.9)), url("../img/Eagle.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 
 .header {
   margin-bottom: 175px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
 }
 
 .header .logo {
   padding: 10px 0;
   font-size: 30px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
   color: #fff;
-}
-
-.header .navigation {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
 }
 
 .header .navigation_item {
@@ -541,24 +562,15 @@ a {
   text-transform: uppercase;
   font-weight: 700;
   padding: 10px 0;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
 }
 
 .header .navigation_link:hover {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
 }
 
 .header .navigation_link:hover .svg-icon-head {
   fill: #fce38a;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
   -webkit-transform: scale(1.4);
   -ms-transform: scale(1.4);
   transform: scale(1.4);
@@ -574,14 +586,12 @@ a {
 
 .main-head_top {
   font-size: 72px;
-  font-family: "KaushanScript", Arial, sans-serif;
   color: #fff;
   margin-bottom: 50px;
 }
 
 .main-head_bottom {
   font-size: 150px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
   color: #fff;
   margin-bottom: 130px;
   text-transform: uppercase;
@@ -590,74 +600,43 @@ a {
 .main-head_btn {
   padding: 15px 30px;
   border: 2px solid #fff;
-  font-size: 14px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
   color: #fff;
   border: 3px solid #fff;
   cursor: pointer;
   text-transform: uppercase;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
 }
 
 .main-head_btn:hover {
   border-color: #f38181;
   color: #f38181;
-  -webkit-transition: .1s ease;
-  -o-transition: .1s ease;
-  transition: .1s ease;
   -webkit-transform: scale(1.2);
   -ms-transform: scale(1.2);
   transform: scale(1.2);
 }
 
+.service-head::after {
+  background-color: #f38181;
+  margin: 45px auto;
+}
+
 .service-head_top {
   font-size: 24px;
-  font-family: "KaushanScript", Arial, sans-serif;
-  color: #000;
   margin-bottom: 20px;
 }
 
 .service-head_bottom {
   font-size: 30px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
-  color: #000;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 
 .service-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: unset;
-  -webkit-align-items: unset;
-  -ms-flex-align: unset;
-  align-items: unset;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .service-item {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: unset;
-  -webkit-align-items: unset;
-  -ms-flex-align: unset;
-  align-items: unset;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
@@ -685,9 +664,6 @@ a {
 
 .service-item_discription {
   line-height: 20px;
-  font-size: 15px;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #b3b3b3;
 }
 
 .team-head {
@@ -696,21 +672,19 @@ a {
 
 .team-head_top {
   font-size: 24px;
-  font-family: "KaushanScript", Arial, sans-serif;
-  color: #000;
   margin-bottom: 20px;
 }
 
 .team-head_bottom {
   font-size: 30px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
-  color: #000;
   margin-bottom: 40px;
   text-transform: uppercase;
 }
 
 .team-head_bottom::after {
   margin-top: 40px;
+  background-color: #f38181;
+  margin: 45px auto;
 }
 
 .team-head_discription {
@@ -722,32 +696,11 @@ a {
 
 .our-team {
   padding-bottom: 75px;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: unset;
-  -webkit-align-items: unset;
-  -ms-flex-align: unset;
-  align-items: unset;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
 }
 
 .our-team_name {
   margin-bottom: 15px;
   text-transform: uppercase;
-}
-
-.our-team_specialty {
-  font-size: 15px;
-  font-family: "Roboto", Arial, sans-serif;
-  color: #b3b3b3;
 }
 
 .our-team_img-holder {
@@ -764,14 +717,8 @@ a {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   width: 380px;
   min-height: 470px;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
   margin-bottom: 30px;
 }
 
@@ -796,17 +743,11 @@ a {
 
 .our-team_img-holder:hover::after {
   opacity: 1;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
 }
 
 .our-team_img-holder:hover .our-team_icon {
   opacity: 1;
   z-index: 100;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
 }
 
 .our-team_img-holder:hover {
@@ -815,9 +756,6 @@ a {
   transform: translate(-15px, -15px);
   -webkit-box-shadow: 15px 15px 1px #95e1d3;
   box-shadow: 15px 15px 1px #95e1d3;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
 }
 
 .our-team_icon {
@@ -827,9 +765,6 @@ a {
   background-color: #fce38a;
   color: #f38181;
   margin: 2px;
-  -webkit-transition: .2s linear;
-  -o-transition: .2s linear;
-  transition: .2s linear;
   cursor: pointer;
   opacity: 0;
 }
@@ -847,21 +782,6 @@ a {
 }
 
 .footer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-flex-wrap: nowrap;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
   border-top: 1px solid #b3b3b3;
   padding-top: 10px;
 }
@@ -888,17 +808,10 @@ a {
   background-color: #95e1d3;
   padding: 15px 30px;
   font-size: 15px;
-  font-family: "Montserrat-bold", Arial, sans-serif;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
 }
 
 .footer_subscribe-btn:hover {
   color: #fce38a;
-  -webkit-transition: .1s linear;
-  -o-transition: .1s linear;
-  transition: .1s linear;
 }

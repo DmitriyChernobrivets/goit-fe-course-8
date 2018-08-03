@@ -1,24 +1,28 @@
 .service-head {
   &::after {
-    @extend %pseudo-base;
+    @include underline($pink-color, 45px);
   }
   &_top {
-    @include fonts(24px, 'KaushanScript', $services-text-color);
+    font-size: 24px;
+    @extend %font-Kaushan;
     margin-bottom: 20px;
   }
   &_bottom {
-    @include fonts(30px, 'Montserrat-bold', $services-text-color);
+    font-size: 30px;
+    @extend %font-mont-bold;
     margin-bottom: 40px;
     text-transform: uppercase;
   }
 }
 
 .service-list {
-  @include flex(space-between, unset, wrap);
+  @extend %flex-base;
+  flex-wrap: wrap;
 }
 
 .service-item {
-  @include flex(space-between, unset, wrap);
+  @extend %flex-base;
+  flex-wrap: wrap;
   flex-basis: 370px;
   margin-bottom: 100px;
   &_box {
@@ -34,6 +38,6 @@
   }
   &_discription {
     line-height: 20px;
-    @include fonts(15px, 'Roboto', $discription-color);
+    @extend %font-roboto;
   }
 }

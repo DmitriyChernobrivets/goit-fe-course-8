@@ -4,7 +4,10 @@
   align-items: $align-items;
   flex-wrap: $wrap;
 }
-
+%flex-base {
+  display: flex;
+  justify-content: space-between;
+}
 @mixin fonts($size, $family, $color) {
   font-size: $size;
   font-family: $family, Arial, sans-serif;
@@ -15,22 +18,40 @@
   width: $width;
   min-height: $height;
 }
-@mixin background ($gradient, $url, $repeat, $position, $size) {
-  background: $gradient, url($url);
-  background-repeat: $repeat;
-  background-position: $position;
-  background-size: $size;
+
+@mixin underline($color, $top-margin) {
+  @extend %underline-base;
+  background-color: $color;
+  margin: $top-margin auto;
 }
-%pseudo-base {
+
+%underline-base {
   display: block;
   content: "";
   width: 60px;
-  height: 5px;
-  background-color: $pink-color;
-  margin: 0 auto 45px;
+  height: 3px;
+}
+@mixin background ($gradient, $url) {
+  background: $gradient, url($url);
+  @extend %bg;
 }
 
-%pseudo {
-  display: block;
-  content: "";
+%bg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+%font-Kaushan {
+  font-family: "KaushanScript", Arial, sans-serif;
+}
+
+%font-mont-bold {
+  font-family: "Montserrat-bold", Arial, sans-serif;
+}
+%font-roboto {
+  font-family: "Roboto", Arial, sans-serif;
+  color: #b3b3b3;
+}
+%transition {
+  transition: .1s linear;
 }
